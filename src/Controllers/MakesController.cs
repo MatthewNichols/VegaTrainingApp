@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Vega.Db;
 using Vega.Models;
-using Vega.Models.Dtos;
+using Vega.Models.ApiResources;
 
 namespace Vega.Controllers
 {

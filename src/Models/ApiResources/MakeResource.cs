@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Vega.Models.Dtos
+namespace Vega.Models.ApiResources
 {
 	public class MakeResource
 	{

@@ -1,4 +1,4 @@
-﻿namespace Vega.Models.Dtos
+﻿namespace Vega.Models.ApiResources
 {
     public class FeatureResource
     {
