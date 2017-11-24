@@ -5,11 +5,12 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using Vega.Interfaces;
 
 namespace Vega.Models
 {
     [Table("Vehicles")]
-    public class Vehicle
+    public class Vehicle : IHasId
     {
 	    public Vehicle()
 	    {

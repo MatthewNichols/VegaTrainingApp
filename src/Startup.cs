@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Vega.Db;
+using Vega.Interfaces;
+using Vega.Repositories;
 
 namespace WebApplicationBasic
 {
@@ -37,6 +39,9 @@ namespace WebApplicationBasic
 
 	        var connectionString = Configuration.GetConnectionString("Default");
 	        services.AddDbContext<VegaDbContext>(options => options.UseSqlServer(connectionString));
+
+	        services.AddScoped<IVehicleRepository, VehicleRepository>();
+	        services.AddScoped<IModelsRepository, ModelRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

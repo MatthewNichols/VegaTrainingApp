@@ -4,11 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using Vega.Interfaces;
 
 namespace Vega.Models
 {
 	[Table("Models")]
-	public class Model
+	public class Model : IHasId
 	{
 		public int Id { get; set; }
 

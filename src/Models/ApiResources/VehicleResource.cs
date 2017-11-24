@@ -9,21 +9,14 @@ namespace Vega.Models.ApiResources
     {
 	    public VehicleResource()
 	    {
-		    Features = new List<int>();
+		    Features = new List<KeyValuePairResource>();
 	    }
 
         public int Id { get; set; }
-        public int ModelId { get; set; }
-        public Model Model { get; set; }
+        public KeyValuePairResource Model { get; set; }
+	    public KeyValuePairResource Make { get; set; }
         public bool IsRegistered { get; set; }
 	    public ContactResource Contact { get; set; }
-        public ICollection<int> Features { get; set; }
-    }
-
-	public class ContactResource
-	{
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
+        public ICollection<KeyValuePairResource> Features { get; set; }
     }
 }

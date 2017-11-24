@@ -7,6 +7,6 @@ namespace Vega.Models.ApiResources
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
-		public ICollection<ModelResource> Models { get; set; } = new List<ModelResource>();
+		public ICollection<KeyValuePairResource> Models { get; set; } = new List<KeyValuePairResource>();
 	}
 }
